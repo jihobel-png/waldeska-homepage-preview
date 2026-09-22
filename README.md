@@ -13,4 +13,4 @@ Náhled využívá pouze veřejné informace a podklady restaurace. Je označen 
 - fotogalerie,
 - kontakty, otevírací doba a mapa.
 
-Poptávka firemních akcí je v tomto návrhu řešena odkazem na e-mail a telefon. Samostatný formulář ani newsletter nebyl v dostupných modulech Choice potvrzen.
+Náhled nově obsahuje také kontaktní formulář pro dotazy a poptávky akcí a samostatný sběr e-mailů pro newsletter. Tyto dva prvky jsou v prototypu bezpečně neodesílací a pro ostré nasazení vyžadují napojení na schválený externí formulář/e-mailový nástroj; jejich samostatný nativní modul nebyl v dostupných funkcích Choice potvrzen.

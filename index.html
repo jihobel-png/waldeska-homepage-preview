@@ -135,6 +135,82 @@
         </div>
       </section>
 
+      <section class="lead-tools content-section" id="poptavka">
+        <div class="contact-form-panel">
+          <div class="form-heading">
+            <p class="eyebrow red">Poptávka a kontakt</p>
+            <h2>Napište nám</h2>
+            <p>Pošlete dotaz nebo základní informace k plánované akci. Ozveme se s dalším postupem.</p>
+          </div>
+
+          <form class="contact-form demo-form" aria-label="Kontaktní formulář">
+            <div class="form-row">
+              <label>
+                Jméno a příjmení
+                <input name="name" autocomplete="name" required />
+              </label>
+              <label>
+                Firma <span>nepovinné</span>
+                <input name="company" autocomplete="organization" />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                E-mail
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+              <label>
+                Telefon
+                <input type="tel" name="phone" autocomplete="tel" />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Preferovaný termín <span>nepovinné</span>
+                <input type="date" name="date" />
+              </label>
+              <label>
+                Počet hostů <span>nepovinné</span>
+                <input type="number" name="guests" min="2" inputmode="numeric" />
+              </label>
+            </div>
+            <label>
+              Zpráva
+              <textarea name="message" rows="4" placeholder="Napište nám, co plánujete nebo s čím můžeme pomoci." required></textarea>
+            </label>
+            <label class="check-row">
+              <input type="checkbox" required />
+              <span>Souhlasím se zpracováním údajů za účelem vyřízení dotazu.</span>
+            </label>
+            <button class="primary-button" type="submit">Odeslat poptávku</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="newsletter-panel">
+          <p class="eyebrow">Novinky z Waldesky</p>
+          <h2>Co je právě na stole</h2>
+          <p>
+            Polední nabídky, sezonní menu a termíny speciálních akcí přímo do e-mailu.
+          </p>
+          <form class="newsletter-form demo-form" aria-label="Přihlášení k newsletteru">
+            <label>
+              E-mail
+              <input type="email" name="newsletter-email" autocomplete="email" placeholder="vas@email.cz" required />
+            </label>
+            <label class="check-row">
+              <input type="checkbox" required />
+              <span>Souhlasím se zasíláním novinek a sezonních nabídek.</span>
+            </label>
+            <button class="light-button" type="submit">Chci novinky</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+          <small class="integration-note">
+            Náhled sběru kontaktů. Ostrá verze bude napojená na schválený e-mailový nástroj a souhlasy.
+          </small>
+        </aside>
+      </section>
+
       <section class="gallery content-section" id="galerie">
         <div class="section-title compact">
           <div>
