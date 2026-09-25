@@ -4,262 +4,249 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex,nofollow" />
-    <meta
-      name="description"
-      content="Waldeska — poctivá česká kuchyně, obědy, večeře a soukromé akce ve Vršovicích."
-    />
+    <meta name="description" content="Waldeska — poctivá česká kuchyně, správně načepované pivo a večery ve Vršovicích." />
     <title>Waldeska — Holka z Vršovic</title>
-    <meta name="theme-color" content="#750000" />
-    <link rel="icon" href="assets/waldeska-portrait-orange.svg?v=20260924-brand" />
-    <link rel="stylesheet" href="styles.css?v=20260924-design" />
+    <meta name="theme-color" content="#720b14" />
+    <link rel="icon" href="assets/waldeska-portrait-orange.svg?v=20260926-fresh" />
+    <link rel="stylesheet" href="styles.css?v=20260926-fresh" />
   </head>
   <body>
+    <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+
     <header class="site-header" id="top">
       <a class="brand" href="#top" aria-label="Waldeska — zpět nahoru">
-        <img src="assets/waldeska-logo-horizontal-color.svg?v=20260924-brand" alt="Waldeska" />
+        <img src="assets/waldeska-logo-horizontal-color.svg?v=20260926-fresh" alt="Waldeska" />
       </a>
 
-      <nav aria-label="Hlavní navigace">
-        <a href="#o-nas">O nás</a>
-        <a href="#nabidka">Kuchyně</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span><b>Menu</b>
+      </button>
+
+      <nav id="main-nav" aria-label="Hlavní navigace">
+        <a href="#pribeh">Příběh</a>
+        <a href="#kuchyne">Kuchyně</a>
         <a href="#akce">Akce</a>
         <a href="#galerie">Galerie</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
 
-      <a class="order-button" href="https://waldeska.cz/booking">Rezervovat stůl</a>
+      <a class="header-cta" href="https://waldeska.cz/booking">
+        <span>Rezervovat</span><i aria-hidden="true">↗</i>
+      </a>
     </header>
 
-    <main>
-      <section class="hero" aria-label="Úvod Waldesky">
+    <main id="obsah">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-visual">
+          <img src="assets/hero-01.png" alt="Interiér restaurace Waldeska ve Vršovicích" />
+          <div class="hero-shade"></div>
+          <p class="hero-location"><span></span> Praha 10 · Vršovice</p>
+          <p class="hero-hours">Po–Ne<br /><strong>11—23</strong></p>
+        </div>
+
         <div class="hero-copy">
-          <p class="eyebrow">Holka z Vršovic</p>
-          <h1>Poctivě.<br />Po svém.<br />Ve Vršovicích.</h1>
-          <p class="hero-lead">Česká kuchyně, která má respekt k tradici a chuť dělat věci současně.</p>
+          <p class="kicker">Restaurace &amp; výčep · Vršovice</p>
+          <h1 id="hero-title">Poctivě.<br /><em>Po svém.</em></h1>
+          <p class="hero-intro">
+            Česká kuchyně bez nánosu nostalgie. Vlastní výroba, poctivé chutě
+            a pivo, o které je postaráno tak, jak má být.
+          </p>
           <div class="hero-actions">
-            <a class="primary-button" href="https://waldeska.cz/online-menu">Prohlédnout menu</a>
-            <a class="outline-button" href="https://waldeska.cz/booking">Rezervovat stůl</a>
+            <a class="button button-primary" href="https://waldeska.cz/online-menu">Dnešní menu <span>↗</span></a>
+            <a class="button button-ghost" href="https://waldeska.cz/booking">Rezervovat stůl</a>
           </div>
         </div>
-        <div class="hero-media">
-          <img src="assets/hero-01.png" alt="Bar a interiér restaurace Waldeska" />
-          <div class="hero-address">
-            <span>V<span aria-hidden="true">↗</span></span>
-            <p>Vršovická 860/49<br />Denně 11:00–23:00</p>
-          </div>
+
+        <div class="hero-mark" aria-hidden="true">
+          <img src="assets/waldeska-portrait-orange.svg?v=20260926-fresh" alt="" />
+          <span>Holka<br />z Vršovic</span>
         </div>
-        <img class="hero-portrait" src="assets/waldeska-portrait-orange.svg?v=20260924-brand" alt="" />
       </section>
 
-      <div class="word-strip" aria-hidden="true">
-        <span>Oběd</span><i>•</i><span>Večeře</span><i>•</i><span>Poctivé pivo</span><i>•</i><span>Oslavy</span><i>•</i><span>Vršovice</span>
-      </div>
-
-      <section class="quick-links" aria-label="Rychlé akce">
-        <a href="https://waldeska.cz/online-menu">
-          <span>Prohlédnout nabídku</span>
-          <strong>Menu <b>↗</b></strong>
-        </a>
-        <a href="https://waldeska.cz/booking">
-          <span>Zajistit si stůl</span>
-          <strong>Rezervace <b>↗</b></strong>
-        </a>
+      <section class="action-bar" aria-label="Rychlé odkazy">
         <a href="https://waldeska.cz/section:tydenni-nabidka">
-          <span>Každý pracovní den</span>
-          <strong>Polední menu <b>↗</b></strong>
+          <small>01 / Každý všední den</small>
+          <strong>Polední menu</strong><span>↗</span>
+        </a>
+        <a href="https://waldeska.cz/online-menu">
+          <small>02 / Na hlad i na chuť</small>
+          <strong>Stálá nabídka</strong><span>↗</span>
+        </a>
+        <a href="#akce">
+          <small>03 / Od večeře po oslavu</small>
+          <strong>Soukromé akce</strong><span>↓</span>
         </a>
       </section>
 
-      <section class="about content-section" id="o-nas">
-        <div class="about-photo">
-          <img src="assets/gallery-02.png" alt="Čepování piva ve Waldesce" />
-          <span>Praha 10<br />Vršovice</span>
+      <section class="manifesto section" id="pribeh">
+        <div class="section-label"><span>01</span><p>O nás</p></div>
+        <div class="manifesto-copy reveal">
+          <p class="kicker kicker-wine">Místo, kam se vracíte</p>
+          <h2>Na rychlý oběd.<br />Na jedno. <em>Na celý večer.</em></h2>
+          <div class="manifesto-text">
+            <p class="lead">
+              Ve Waldesce děláme známé chutě současně a většinu věcí přímo u nás.
+            </p>
+            <div>
+              <p>
+                Od pečiva, uzenin a ručně zadělávaných knedlíků až po paštiky,
+                zavařenou zeleninu a domácí sirupy. Žádné kudrlinky. Jen dobré jídlo,
+                správně načepované pivo a servis, který vás nechá v klidu užít si stůl.
+              </p>
+              <a class="arrow-link" href="https://waldeska.cz/online-menu">Prohlédnout aktuální menu <span>↗</span></a>
+            </div>
+          </div>
         </div>
-        <div class="about-copy">
-          <img class="brand-portrait" src="assets/waldeska-portrait-orange.svg?v=20260924-brand" alt="" />
-          <p class="eyebrow red">O Waldesce</p>
-          <h2>Česká restaurace, kde vzniká většina věcí ve vlastní kuchyni</h2>
-          <p class="lead">
-            Od uzenin a pečiva přes ručně zadělávané knedlíky až po paštiky,
-            zavařenou zeleninu, ovoce a domácí sirupy.
-          </p>
-          <p>
-            Přijďte na rychlý oběd, dlouhou večeři nebo správně načepované pivo.
-            Tradiční chutě podáváme současně, poctivě a bez zbytečných kudrlinek.
-          </p>
-          <a class="text-link" href="https://waldeska.cz/online-menu">Prohlédnout aktuální menu →</a>
-        </div>
+        <figure class="manifesto-photo reveal">
+          <img src="assets/gallery-02.png" alt="Čepování piva ve Waldesce" loading="lazy" />
+          <figcaption>Vršovická 860/49<br />Praha 10</figcaption>
+        </figure>
       </section>
 
-      <section class="items content-section" id="nabidka">
-        <div class="section-title">
-          <p class="eyebrow red">Aktuálně z kuchyně</p>
-          <h2>Doporučujeme</h2>
-          <p>Oběd, večeře nebo jen jedno dobře načepované. Vždycky poctivě a bez zbytečných kudrlinek.</p>
+      <section class="kitchen section" id="kuchyne">
+        <div class="kitchen-head reveal">
+          <div class="section-label light"><span>02</span><p>Z kuchyně</p></div>
+          <div>
+            <p class="kicker">Dnes by to šlo</p>
+            <h2>Věci, kvůli kterým<br /><em>má smysl přijít.</em></h2>
+          </div>
+          <p>
+            Nabídka se mění podle sezony a toho, co dává smysl právě teď.
+            Aktuální jídla a ceny najdete vždy v online menu.
+          </p>
         </div>
-        <div class="item-grid">
-          <article class="item-card">
-            <img src="assets/gallery-04.png" alt="Jídlo a pivo ve Waldesce" />
-            <div><span>01</span><h3>Polední nabídka</h3><p>Každý pracovní den nový důvod stavit se na oběd.</p></div>
+
+        <div class="dish-grid">
+          <article class="dish-card dish-card-tall reveal">
+            <img src="assets/gallery-04.png" alt="Výběr jídel a pivo ve Waldesce" loading="lazy" />
+            <div><span>Oběd</span><h3>Polední nabídka</h3><p>Nový důvod stavit se každý pracovní den.</p></div>
           </article>
-          <article class="item-card">
-            <img src="assets/gallery-11.png" alt="Těstovinový pokrm ve Waldesce" />
-            <div><span>02</span><h3>Z vlastní kuchyně</h3><p>Pečivo, uzeniny, knedlíky i sirupy. Co můžeme, děláme sami.</p></div>
+          <article class="dish-card reveal">
+            <img src="assets/gallery-11.png" alt="Čerstvý pokrm z kuchyně Waldesky" loading="lazy" />
+            <div><span>Naše</span><h3>Vlastní výroba</h3><p>Co můžeme udělat sami, to také děláme.</p></div>
           </article>
-          <article class="item-card">
-            <img src="assets/gallery-10.png" alt="Burger s pivem ve Waldesce" />
-            <div><span>03</span><h3>Večeře a pivo</h3><p>Známé chutě v současné podobě a pivo, o které je dobře postaráno.</p></div>
+          <article class="dish-card reveal">
+            <img src="assets/gallery-10.png" alt="Burger a pivo ve Waldesce" loading="lazy" />
+            <div><span>Večer</span><h3>Jídlo &amp; pivo</h3><p>Po práci, s přáteli nebo jen tak.</p></div>
           </article>
         </div>
-        <a class="primary-button items-button" href="https://waldeska.cz/online-menu">Celé menu</a>
+
+        <a class="menu-callout" href="https://waldeska.cz/online-menu">
+          <span>Máte hlad?</span><strong>Podívejte se, co je dnes na stole.</strong><i>↗</i>
+        </a>
       </section>
 
       <section class="events" id="akce">
-        <img src="assets/gallery-06.png" alt="Prostřený stůl ve Waldesce" />
-        <div>
-          <img class="event-portrait" src="assets/waldeska-portrait-orange.svg?v=20260924-brand" alt="" />
-          <p class="eyebrow">Firemní a soukromé akce</p>
-          <h2>Váš večer.<br />Naše starost.</h2>
+        <div class="events-photo">
+          <img src="assets/gallery-06.png" alt="Prostřený stůl pro společnou večeři ve Waldesce" loading="lazy" />
+        </div>
+        <div class="events-copy reveal">
+          <div class="section-label light"><span>03</span><p>Akce</p></div>
+          <p class="kicker">Firemní &amp; soukromé</p>
+          <h2>Váš večer.<br /><em>Naše starost.</em></h2>
           <p>
-            Plánujete firemní večírek, společnou večeři nebo rodinnou oslavu?
-            Napište nám termín, počet hostů a představu. Připravíme nabídku na míru.
+            Večírek, oslava, rodinná večeře nebo setkání týmu. Napište nám termín,
+            počet hostů a představu — postaráme se o zbytek.
           </p>
-          <div class="event-actions">
-            <a class="light-button" href="mailto:info@waldeska.cz?subject=Poptávka%20akce%20ve%20Waldesce">Napsat poptávku</a>
-            <a href="tel:+420725970948">+420 725 970 948</a>
-          </div>
+          <ul>
+            <li>Menu sestavené podle příležitosti</li>
+            <li>Prostor a uspořádání pro vaši skupinu</li>
+            <li>Jasná domluva předem</li>
+          </ul>
+          <a class="button button-light" href="#poptavka">Nezávazně poptat akci <span>↓</span></a>
         </div>
       </section>
 
-      <section class="lead-tools content-section" id="poptavka">
-        <div class="contact-form-panel">
-          <div class="form-heading">
-            <p class="eyebrow red">Poptávka a kontakt</p>
-            <h2>Napište nám</h2>
-            <p>Pošlete dotaz nebo základní informace k plánované akci. Ozveme se s dalším postupem.</p>
-          </div>
-
-          <form class="contact-form demo-form" aria-label="Kontaktní formulář">
-            <div class="form-row">
-              <label>
-                Jméno a příjmení
-                <input name="name" autocomplete="name" required />
-              </label>
-              <label>
-                Firma <span>nepovinné</span>
-                <input name="company" autocomplete="organization" />
-              </label>
-            </div>
-            <div class="form-row">
-              <label>
-                E-mail
-                <input type="email" name="email" autocomplete="email" required />
-              </label>
-              <label>
-                Telefon
-                <input type="tel" name="phone" autocomplete="tel" />
-              </label>
-            </div>
-            <div class="form-row">
-              <label>
-                Preferovaný termín <span>nepovinné</span>
-                <input type="date" name="date" />
-              </label>
-              <label>
-                Počet hostů <span>nepovinné</span>
-                <input type="number" name="guests" min="2" inputmode="numeric" />
-              </label>
-            </div>
-            <label>
-              Zpráva
-              <textarea name="message" rows="4" placeholder="Napište nám, co plánujete nebo s čím můžeme pomoci." required></textarea>
-            </label>
-            <label class="check-row">
-              <input type="checkbox" required />
-              <span>Souhlasím se zpracováním údajů za účelem vyřízení dotazu.</span>
-            </label>
-            <button class="primary-button" type="submit">Odeslat poptávku</button>
-            <p class="form-status" aria-live="polite"></p>
-          </form>
-        </div>
-
-        <aside class="newsletter-panel">
-          <img class="newsletter-portrait" src="assets/waldeska-portrait-orange.svg?v=20260924-brand" alt="" />
-          <p class="eyebrow">Novinky z Waldesky</p>
-          <h2>Co je právě na stole</h2>
-          <p>
-            Polední nabídky, sezonní menu a termíny speciálních akcí přímo do e-mailu.
-          </p>
-          <form class="newsletter-form demo-form" aria-label="Přihlášení k newsletteru">
-            <label>
-              E-mail
-              <input type="email" name="newsletter-email" autocomplete="email" placeholder="vas@email.cz" required />
-            </label>
-            <label class="check-row">
-              <input type="checkbox" required />
-              <span>Souhlasím se zasíláním novinek a sezonních nabídek.</span>
-            </label>
-            <button class="light-button" type="submit">Chci novinky</button>
-            <p class="form-status" aria-live="polite"></p>
-          </form>
-          <small class="integration-note">Odběr můžete kdykoli jednoduše zrušit.</small>
-        </aside>
-      </section>
-
-      <section class="gallery content-section" id="galerie">
-        <div class="section-title compact">
+      <section class="gallery section" id="galerie">
+        <div class="gallery-head reveal">
+          <div class="section-label"><span>04</span><p>Atmosféra</p></div>
           <div>
-            <p class="eyebrow red">Fotogalerie</p>
-            <h2>Waldeska od stolu</h2>
+            <p class="kicker kicker-wine">Od stolu</p>
+            <h2>Tak chutnají <em>Vršovice.</em></h2>
           </div>
-          <a class="text-link" href="https://www.instagram.com/waldeska_restaurant/">Instagram →</a>
+          <a class="arrow-link" href="https://www.instagram.com/waldeska_restaurant/">Sledovat Instagram <span>↗</span></a>
         </div>
         <div class="gallery-grid">
-          <img src="assets/gallery-01.png" alt="Jídlo a pivo u stolu" />
-          <img src="assets/gallery-02.png" alt="Čepování piva" />
-          <img src="assets/gallery-03.png" alt="Pokrm Waldesky" />
-          <img src="assets/gallery-04.png" alt="Výběr z nabídky Waldesky" />
-          <img src="assets/gallery-05.png" alt="Hlavní jídlo Waldesky" />
-          <img src="assets/gallery-06.png" alt="Prostřený stůl" />
-          <img src="assets/gallery-07.png" alt="Detail pokrmu" />
-          <img src="assets/gallery-08.png" alt="Burger a hranolky" />
-          <img src="assets/gallery-09.png" alt="Atmosféra u stolu" />
-          <img src="assets/gallery-10.png" alt="Burger a pivo" />
-          <img src="assets/gallery-11.png" alt="Těstoviny" />
-          <img src="assets/gallery-12.png" alt="Masový pokrm" />
+          <figure class="gallery-a reveal"><img src="assets/gallery-01.png" alt="Jídlo a pivo u stolu" loading="lazy" /></figure>
+          <figure class="gallery-b reveal"><img src="assets/gallery-03.png" alt="Pokrm Waldesky" loading="lazy" /></figure>
+          <figure class="gallery-c reveal"><img src="assets/gallery-08.png" alt="Burger s hranolky" loading="lazy" /></figure>
+          <figure class="gallery-d reveal"><img src="assets/gallery-09.png" alt="Večer u stolu ve Waldesce" loading="lazy" /></figure>
+          <figure class="gallery-e reveal"><img src="assets/gallery-12.png" alt="Hlavní chod z kuchyně Waldesky" loading="lazy" /></figure>
+          <p class="gallery-quote">„Poctivé jídlo.<br />Živý podnik.<br /><em>Žádná póza.</em>“</p>
         </div>
       </section>
 
-      <section class="contact content-section" id="kontakt">
-        <div class="contact-copy">
-          <p class="eyebrow red">Kontakt</p>
-          <h2>Stavte se ve Vršovicích</h2>
-          <dl>
-            <div><dt>Adresa</dt><dd>Vršovická 860/49<br />101 00 Praha 10–Vršovice</dd></div>
-            <div><dt>Otevírací doba</dt><dd>Každý den<br />11:00–23:00</dd></div>
-            <div><dt>Kontakt</dt><dd><a href="tel:+420725970948">+420 725 970 948</a><br /><a href="mailto:info@waldeska.cz">info@waldeska.cz</a></dd></div>
-          </dl>
-          <a class="primary-button" href="https://maps.google.com/?q=Vr%C5%A1ovick%C3%A1+860%2F49%2C+Praha">Navigovat</a>
+      <section class="lead-section section" id="poptavka">
+        <div class="lead-intro reveal">
+          <div class="section-label"><span>05</span><p>Napište nám</p></div>
+          <p class="kicker kicker-wine">Máte plán?</p>
+          <h2>Pojďme ho dát <em>ke stolu.</em></h2>
+          <p>
+            Pošlete nám základní informace. Ozveme se, doladíme detaily a připravíme
+            řešení, které bude sedět vám i vašim hostům.
+          </p>
+          <a href="tel:+420725970948">+420 725 970 948</a>
+          <a href="mailto:info@waldeska.cz">info@waldeska.cz</a>
         </div>
-        <a class="map" href="https://maps.google.com/?q=Vr%C5%A1ovick%C3%A1+860%2F49%2C+Praha" aria-label="Otevřít polohu Waldesky v mapě">
-          <span class="map-pin">W</span>
-          <strong>Vršovická 860/49</strong>
-          <small>Otevřít v mapě</small>
-        </a>
+
+        <form class="contact-form demo-form reveal" aria-label="Kontaktní formulář">
+          <div class="form-pair">
+            <label>Jméno a příjmení<input name="name" autocomplete="name" required /></label>
+            <label>Firma <span>nepovinné</span><input name="company" autocomplete="organization" /></label>
+          </div>
+          <div class="form-pair">
+            <label>E-mail<input type="email" name="email" autocomplete="email" required /></label>
+            <label>Telefon<input type="tel" name="phone" autocomplete="tel" /></label>
+          </div>
+          <div class="form-pair">
+            <label>Preferovaný termín <span>nepovinné</span><input type="date" name="date" /></label>
+            <label>Počet hostů <span>nepovinné</span><input type="number" name="guests" min="2" inputmode="numeric" /></label>
+          </div>
+          <label>Zpráva<textarea name="message" rows="4" placeholder="Co plánujete?" required></textarea></label>
+          <label class="check-row"><input type="checkbox" required /><span>Souhlasím se zpracováním údajů za účelem vyřízení dotazu.</span></label>
+          <button class="button button-primary" type="submit">Odeslat poptávku <span>↗</span></button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="newsletter">
+        <img src="assets/waldeska-portrait-orange.svg?v=20260926-fresh" alt="" />
+        <div>
+          <p class="kicker">Novinky z Waldesky</p>
+          <h2>Co je právě <em>na stole?</em></h2>
+          <p>Polední nabídky, sezonní menu a speciální akce přímo do e-mailu.</p>
+        </div>
+        <form class="newsletter-form demo-form" aria-label="Přihlášení k newsletteru">
+          <label><span>E-mail</span><input type="email" name="newsletter-email" autocomplete="email" placeholder="vas@email.cz" required /></label>
+          <label class="check-row"><input type="checkbox" required /><span>Souhlasím se zasíláním novinek.</span></label>
+          <button type="submit" aria-label="Přihlásit k odběru">↗</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="contact section" id="kontakt">
+        <div class="contact-main reveal">
+          <div class="section-label light"><span>06</span><p>Kontakt</p></div>
+          <p class="kicker">Stavte se</p>
+          <h2>Jsme <em>ve Vršovicích.</em></h2>
+          <a class="address" href="https://maps.google.com/?q=Vr%C5%A1ovick%C3%A1+860%2F49%2C+Praha">Vršovická 860/49<br />101 00 Praha 10</a>
+          <a class="button button-light" href="https://maps.google.com/?q=Vr%C5%A1ovick%C3%A1+860%2F49%2C+Praha">Otevřít navigaci <span>↗</span></a>
+        </div>
+        <div class="contact-details reveal">
+          <div><small>Otevírací doba</small><strong>Každý den<br />11:00—23:00</strong></div>
+          <div><small>Kuchyně / vyzvednutí</small><strong>Každý den<br />11:00—21:30</strong></div>
+          <div><small>Rezervace &amp; dotazy</small><strong><a href="tel:+420725970948">+420 725 970 948</a><br /><a href="mailto:info@waldeska.cz">info@waldeska.cz</a></strong></div>
+        </div>
       </section>
     </main>
 
     <footer>
-      <a class="brand footer-brand" href="#top">
-        <img src="assets/waldeska-logo-horizontal-color.svg?v=20260924-brand" alt="Waldeska" />
-      </a>
-      <p>© 2026 Waldeska Restaurant</p>
-      <div>
-        <a href="https://www.facebook.com/waldeskarestaurace">Facebook</a>
-        <a href="https://www.instagram.com/waldeska_restaurant/">Instagram</a>
-      </div>
+      <a class="brand footer-brand" href="#top"><img src="assets/waldeska-logo-horizontal-color.svg?v=20260926-fresh" alt="Waldeska" /></a>
+      <p>Česká kuchyně · výčep · Vršovice</p>
+      <div><a href="https://www.facebook.com/waldeskarestaurace">Facebook</a><a href="https://www.instagram.com/waldeska_restaurant/">Instagram</a></div>
+      <small>© 2026 Waldeska Restaurant</small>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260926-fresh"></script>
   </body>
 </html>

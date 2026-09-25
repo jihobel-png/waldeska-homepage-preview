@@ -8,11 +8,12 @@ Vizuální styl vychází z klientem dodaného logopacku Waldeska 2026. Web pou�
 
 ## Obsah náhledu
 
-- značkové hero s fotografií připravenou pro pozdější výměnu za video,
+- celoplošné značkové hero s fotografií připravenou pro pozdější výměnu za video,
 - příběh a nabídka Waldesky,
 - blok firemních a soukromých akcí,
 - kontaktní formulář a newsletter,
-- obrazová galerie,
-- kontakty, otevírací doba a mapa.
+- editoriální obrazová galerie,
+- kontakty, otevírací doba a přímý odkaz do navigace,
+- responzivní mobilní navigace a jemné scroll animace.
 
 Kontaktní formulář a newsletter jsou v prototypu bezpečně neodesílací. Pro ostré nasazení vyžadují napojení na schválený formulářový nebo e-mailový nástroj.
