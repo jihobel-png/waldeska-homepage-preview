@@ -8,7 +8,7 @@ Vizuální styl vychází z klientem dodaného logopacku Waldeska 2026. Web pou�
 
 ## Obsah náhledu
 
-- značkové hero s autentickým produkčním videem, bez zvuku, ve smyčce a s možností pozastavení,
+- značkové hero s autentickým produkčním videem, bez zvuku, ve smyčce a bez ovládacích tlačítek,
 - příběh a nabídka Waldesky,
 - blok firemních a soukromých akcí,
 - kontaktní formulář a newsletter,
@@ -25,4 +25,4 @@ Výběr upřednostňuje chuťové detaily jídla, skutečnou práci v kuchyni, �
 
 Vizuál je zklidněný: menší nadpisy, pravidelné rozložení a žádné velké dekorativní portréty nebo popisky přes fotografie. Hero používá webovou H.264/MP4 kopii dodaného 26sekundového videa (1280 × 720 px, bez zvukové stopy a zdrojových metadat, s rychlým začátkem přehrávání). Originální 4K soubor není publikovaný.
 
-Fotografie interiéru zůstává jako okamžitý fallback při načítání, blokovaném přehrávání nebo chybě videa. Při omezení pohybu či zapnuté úspoře dat se video automaticky nestahuje a nespouští; návštěvník jej může přehrát tlačítkem. Video se pozastaví mimo viditelný úvod stránky nebo na neaktivní záložce. Ruční pozastavení je respektováno i při návratu do hero.
+Fotografie interiéru zůstává jako okamžitý fallback při načítání, blokovaném přehrávání nebo chybě videa. Při omezení pohybu či zapnuté úspoře dat se video nestahuje a nespouští. Hero nemá tlačítko přehrát/pozastavit ani nativní ovládací lištu. Video se automaticky pozastaví mimo viditelný úvod stránky nebo na neaktivní záložce a při návratu se obnoví, pokud to dovoluje prohlížeč a preference návštěvníka.
