@@ -21,6 +21,77 @@ nav?.querySelectorAll('a').forEach((link) => {
   });
 });
 
+// Keep the photo until a frame actually plays. Reduced motion / data saving
+// leave the video unloaded unless the visitor explicitly chooses to play it.
+const heroMedia = document.querySelector('[data-hero-media]');
+const heroVideo = heroMedia?.querySelector('[data-hero-video]');
+const videoToggle = heroMedia?.querySelector('[data-video-toggle]');
+if (heroVideo && videoToggle) {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const saveData = Boolean(navigator.connection?.saveData);
+  let manualPlayback = false;
+  let userPaused = false;
+  let inView = true;
+  let failed = false;
+
+  const updateVideoButton = () => {
+    const playing = !heroVideo.paused;
+    videoToggle.querySelector('[data-video-label]').textContent = playing ? 'Pozastavit video' : 'Přehrát video';
+    videoToggle.querySelector('[data-video-icon]').textContent = playing ? 'Ⅱ' : '▶';
+  };
+  const syncVideoPlayback = () => {
+    const allowed = manualPlayback || (!reducedMotion.matches && !saveData);
+    if (failed || !allowed || userPaused || !inView || document.hidden) {
+      heroVideo.pause();
+      if (!allowed) heroMedia.classList.remove('is-video-playing');
+      return;
+    }
+    if (!heroVideo.getAttribute('src')) {
+      heroVideo.muted = true;
+      heroVideo.src = heroVideo.dataset.src;
+    }
+    heroVideo.play().catch(() => {
+      // Autoplay can be blocked by low-power mode; the button still allows play.
+      if (heroVideo.paused) updateVideoButton();
+    });
+  };
+
+  videoToggle.hidden = false;
+  heroVideo.addEventListener('playing', () => {
+    heroMedia.classList.add('is-video-playing');
+    updateVideoButton();
+  });
+  heroVideo.addEventListener('pause', updateVideoButton);
+  heroVideo.addEventListener('error', () => {
+    failed = true;
+    heroMedia.classList.remove('is-video-playing');
+    videoToggle.hidden = true;
+  });
+  videoToggle.addEventListener('click', () => {
+    if (!heroVideo.paused) {
+      userPaused = true;
+      heroVideo.pause();
+    } else {
+      manualPlayback = true;
+      userPaused = false;
+      syncVideoPlayback();
+    }
+  });
+  reducedMotion.addEventListener('change', () => {
+    manualPlayback = false;
+    syncVideoPlayback();
+  });
+  document.addEventListener('visibilitychange', syncVideoPlayback);
+  if ('IntersectionObserver' in window) {
+    const videoObserver = new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      syncVideoPlayback();
+    }, { threshold: 0 });
+    videoObserver.observe(heroMedia);
+  }
+  syncVideoPlayback();
+}
+
 document.querySelectorAll('.demo-form').forEach((form) => {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
